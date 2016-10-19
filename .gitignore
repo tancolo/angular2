@@ -1,2 +1,4 @@
 .idea
 /ng2-quickstart/node_modules
+*.log
+
