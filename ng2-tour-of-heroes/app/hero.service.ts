@@ -8,6 +8,7 @@ import { Hero } from './hero';
 @Injectable()
 export class HeroService{
 
+    private headers = new Headers({'Content-Type': 'application/json'});
     private heroesUrl = 'app/heroes';  // URL to web api
     constructor(private http: Http) { }
 
@@ -17,7 +18,6 @@ export class HeroService{
             .then(response => response.json().data as Hero[])
             .catch(this.handleError);
     }
-
 
     getHeroesslowly(): Promise<Hero[]>{
         //delay 2000ms
@@ -30,4 +30,19 @@ export class HeroService{
         .then(heroes => heroes.find(hero => hero.id === id))
 
     }
+
+    private handleError(error: any): Promise<any> {
+        console.error('An error occurred', error); // for demo purposes only
+        return Promise.reject(error.message || error);
+    }
+
+    update(hero: Hero): Promise<Hero> {
+        const url = `${this.heroesUrl}/${hero.id}`;
+        return this.http
+        .put(url, JSON.stringify(hero), {headers: this.headers})
+        .toPromise()
+        .then(() => hero)
+        .catch(this.handleError);
+    }
+
 }
