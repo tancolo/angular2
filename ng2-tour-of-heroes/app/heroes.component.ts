@@ -14,7 +14,8 @@ import {OnInit} from '@angular/core'
         [class.selected]="hero === selectedHero">
             <span class="badge">{{hero.id}}</span> {{hero.name}}
         </li>
-        <my-hero-detail [hero]="selectedHero"></my-hero-detail>
+        <!--<my-hero-detail [hero]="selectedHero"></my-hero-detail>-->
+        <my-hero-detail></my-hero-detail>
     </ul>
 	`,
     styles: [`

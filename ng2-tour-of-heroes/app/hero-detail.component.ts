@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Params} from '@angular/router';
 import {Location} from '@angular/common';
 import {HeroService} from './hero.service';
@@ -6,19 +6,12 @@ import {Hero} from "./hero";
 
 @Component({
     selector: 'my-hero-detail',
-    template: `
-    <div *ngIf="hero">
-        <h2>{{hero.name}} details!</h2>
-        <div><label>id: </label>{{hero.id}}</div>
-        <div>
-        <label>name: </label>
-        <input [(ngModel)] = "hero.name" placeholder="name">
-        </div>
-	</div>
-    `
+    templateUrl: '/app/view/hero-detail.component.html'
 })
 
 export class HeroDetailComponent implements OnInit{
+    hero: Hero;
+
     ngOnInit():void {
         this.route.params.forEach((params: Params) => {
             let id = +params['id'];
@@ -32,6 +25,7 @@ export class HeroDetailComponent implements OnInit{
         private location: Location
     ) {}
 
-    @Input()
-    hero: Hero;
+    goBack(): void{
+        this.location.back();
+    }
 }
