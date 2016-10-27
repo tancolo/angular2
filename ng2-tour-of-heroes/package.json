@@ -2,12 +2,14 @@
   "name": "ng2-tour-of-heroes",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "start": "npm run cleandist && npm run moveassets && tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings"
+    "typings": "typings",
+    "cleandist": "rm -rf dist/*",
+    "moveassets": "rsync -a --include='*.css' --include='*.html' --include='*/' --exclude='*' app/ dist/"
   },
   "license": "ISC",
   "dependencies": {
@@ -32,6 +34,7 @@
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
-    "typings":"^1.4.0"
+    "typings":"^1.4.0",
+    "onchange":"^3.0.2"
   }
 }
