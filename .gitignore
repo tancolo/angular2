@@ -1,5 +1,7 @@
 .idea
 /ng2-quickstart/node_modules
+/**/node_modules
+/**/typings
 *.log
 /angular2-webpack
 /rebirth
