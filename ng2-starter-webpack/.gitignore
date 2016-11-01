@@ -4,4 +4,4 @@ node_modules
 /dist
 /src/app/*.js
 /src/*.js
-
+/typings
