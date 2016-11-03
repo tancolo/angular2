@@ -1,11 +1,15 @@
 {
   "name": "ng2-tour-of-heroes",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "scripts": {
-    "build": "webpack --progress",
-    "build:prod": "webpack -p --progress",
+    "start": "npm run cleandist && npm run moveassets && tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
     "postinstall": "typings install",
-    "server": "webpack-dev-server --inline --progress"
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "cleandist": "rm -rf dist/*",
+    "moveassets": "rsync -a --include='*.css' --include='*.html' --include='*/' --exclude='*' app/ dist/"
   },
   "license": "ISC",
   "dependencies": {
@@ -23,21 +27,14 @@
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
-    "angular2-template-loader": "^0.4.0",
-    "awesome-typescript-loader": "^2.2.4",
-    "css-loader": "^0.23.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "html-loader": "^0.4.3",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.13.1",
-    "html-webpack-plugin": "^2.24.1",
-    "ts-loader": "^0.9.5",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
-    "typings": "^1.4.0",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "typings":"^1.4.0",
+    "onchange":"^3.0.2"
   }
 }
