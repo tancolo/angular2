@@ -1,25 +1,20 @@
 import {Component, ViewChild, ElementRef, OnInit, AfterViewInit} from '@angular/core';
-declare var $: any;
+declare var jQuery:any;
 
 @Component({
     selector: 'my-app',
-    template: `<select #selectElem>
-        <option *ngFor="let item of items" [value]="item" [selected]="item === selectedValue">{{item}} option</option>
-        </select>
-        <h4> {{selectedValue}}</h4>`
+    template: `
+    <h4>所选日期:</h4>
+    <input type="text" id="datetimepicker1" value="test">
+    `
 })
 
-export class AppComponent implements AfterViewInit{
-    @ViewChild('selectElem') el:ElementRef;
-    items = ['First', 'Second', 'Third'];
-    selectedValue = 'Second';
-
-    ngAfterViewInit(): void {
-        $(this.el.nativeElement)
-            .chosen()
-            .on('change', (e, args) => {
-                this.selectedValue = args.selected;
-                console.log('selectedValue: ', this.selectedValue);
-            });
+export class AppComponent implements AfterViewInit, OnInit {
+    ngAfterViewInit():void {
+        console.log('debug:11 ', jQuery('#datetimepicker1').val());
+    }
+    ngOnInit():void {
+        console.log('debug: ', jQuery('#datetimepicker1').val('hello world!'));
+        jQuery('#datetimepicker1')
     }
 }
