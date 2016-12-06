@@ -1,7 +1,6 @@
 {
   "globalDependencies": {
     "core-js": "registry:dt/core-js#0.0.0+20160914114559",
-    "jquery": "registry:dt/jquery#1.10.0+20160929162922",
-    "jquery-mousewheel": "registry:dt/jquery-mousewheel#0.0.0+20160501125906"
+    "jquery": "registry:dt/jquery#1.10.0+20160929162922"
   }
 }
