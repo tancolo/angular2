@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular 2 starter webpack</title>
+</head>
+<body>
+
+<div>
+    <input type="text" id="datetimepicker1">
+</div>
+
+</body>
+<link rel="stylesheet" type="text/css" href="node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+<script>
+    $(document).ready(function(){
+        $.datetimepicker.setLocale('ch');
+        jQuery('#datetimepicker1').datetimepicker({
+            onChangeDateTime: function(dp, $input){
+                console.log('date-time: ', $input.val());
+            }
+        });
+    });
+</script>
+</html>

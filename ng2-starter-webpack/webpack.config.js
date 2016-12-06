@@ -9,10 +9,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            {
-                test: /\.ts$/,
-                loader: 'ts-loader'
-            }
+            {test: /\.ts$/, loader: 'ts-loader'}
         ]
     },
     resolve: {
@@ -21,6 +18,11 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
+        }),
+        new webpack.ProvidePlugin({
+            '$': 'jquery',
+            'jquery': 'jquery',
+            'jQuery': 'jquery'
         })
     ]
 };

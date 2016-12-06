@@ -1,5 +1,9 @@
 import {Component, ViewChild, ElementRef, OnInit, AfterViewInit} from '@angular/core';
-declare var jQuery:any;
+import * as $ from 'jquery';
+import '../../node_modules/jquery-mousewheel/jquery.mousewheel.js';
+import '../../node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js';
+
+//declare var $:any;
 
 @Component({
     selector: 'my-app',
@@ -11,10 +15,11 @@ declare var jQuery:any;
 
 export class AppComponent implements AfterViewInit, OnInit {
     ngAfterViewInit():void {
-        console.log('debug:11 ', jQuery('#datetimepicker1').val());
+        console.log('debug:11 ', $('#datetimepicker1').val());
     }
     ngOnInit():void {
-        console.log('debug: ', jQuery('#datetimepicker1').val('hello world!'));
-        jQuery('#datetimepicker1')
+        console.log('debug: ', $('#datetimepicker1').val('hello world!'));
+        $.datetimepicker.setLocale('ch');
+        $('#datetimepicker1').datetimepicker();
     }
 }
