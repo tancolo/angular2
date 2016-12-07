@@ -5,7 +5,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {AppNgBootstrapComponent} from './ng-bootstrap/app.ngbootstrap.component';
 
 @NgModule({
-    imports:        [BrowserModule, NgbModule.forRoot()],
+    imports:        [BrowserModule, FormsModule, NgbModule.forRoot()],
     declarations:   [AppNgBootstrapComponent],
     bootstrap:      [AppNgBootstrapComponent]
 })

@@ -1,7 +1,26 @@
 <h1>Ng Bootstrap Demo</h1>
 
-<p>
-    <ngb-alert [dismissible]="false">
-        <strong>Warning!</strong> 学好ng2，必上angular.cn.
-    </ngb-alert>
-</p>
+<!--<p>-->
+    <!--<ngb-alert [dismissible]="false">-->
+        <!--<strong>Warning!</strong> 学好ng2，必上angular.cn.-->
+    <!--</ngb-alert>-->
+<!--</p>-->
+
+<form class="form-inline">
+    <div class="form-group">
+        <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd"
+            name="dp" [(ngModel)]="model"
+            ngbDatepicker #datePicker="ngbDatepicker">
+            <div class="input-group-addon"
+                 (click)="datePicker.toggle()"  >
+                <button type="button" class="btn btn-sm btn-danger">日期</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<hr/>
+<pre>
+    日期： {{model | json}}
+</pre>
