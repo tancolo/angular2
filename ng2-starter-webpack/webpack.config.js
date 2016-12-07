@@ -21,11 +21,11 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        }),
-        new webpack.ProvidePlugin({
-            '$': 'jquery',
-            'jquery': 'jquery',
-            'jQuery': 'jquery'
         })
+        //new webpack.ProvidePlugin({
+        //    '$': 'jquery',
+        //    'jquery': 'jquery',
+        //    'jQuery': 'jquery'
+        //})
     ]
 };

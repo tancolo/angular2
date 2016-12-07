@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {BrowserModule} from '@angular/platform-browser';
-import {AppBootstrapPickerComponent} from './app.bootstrap-picker.component';
-import {DateTimePickerComponent} from "./datetime-picker.component";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {AppNgBootstrapComponent} from './ng-bootstrap/app.ngbootstrap.component';
 
 @NgModule({
-    imports:        [BrowserModule, FormsModule],
-    declarations:   [AppBootstrapPickerComponent, DateTimePickerComponent],
-    bootstrap:      [AppBootstrapPickerComponent]
+    imports:        [BrowserModule, NgbModule.forRoot()],
+    declarations:   [AppNgBootstrapComponent],
+    bootstrap:      [AppNgBootstrapComponent]
 })
 export class AppModule{}

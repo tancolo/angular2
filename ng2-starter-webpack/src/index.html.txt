@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular 2 starter webpack</title>
+    <!--<link type="text/css" rel="stylesheet" href="../node_modules/jquery-datetimepicker/jquery.datetimepicker.css">-->
+    <link type="text/css" rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+</head>
+<body>
+
+<my-app>Loading...</my-app>
+<!--<script src="../node_modules/jquery/dist/jquery.js"></script>-->
+<!--<script src="../node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>-->
+</body>
+</html>
