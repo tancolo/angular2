@@ -1,0 +1,11 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "Chrome",
+    "windows": {
+        "command": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+    },
+    "args": ["${file}"],
+    "showOutput": "always"
+}

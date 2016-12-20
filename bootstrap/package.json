@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap",
+  "version": "0.0.1",
+  "description": "bootstrap study",
+  "keywords": [
+    "bootstrap" 
+  ],
+  "author": "tancolo",
+  "license": "MIT",
+ 
+  "dependencies": {
+	"jquery": "^2.2.4",
+    "bootstrap": "3.3.7",
+    "bootstrap-social": "^5.1.1"
+  },
+  "devDependencies": { 
+  }
+}
