@@ -1,0 +1,65 @@
+<h1>Ng Bootstrap Demo</h1>
+
+<!--<p>-->
+    <!--<ngb-alert [dismissible]="false">-->
+        <!--<strong>Warning!</strong> 学好ng2，必上angular.cn.-->
+    <!--</ngb-alert>-->
+<!--</p>-->
+
+<!-- ng-bootstrap datepicker 基本使用-->
+<!--<form class="form-inline">-->
+    <!--<div class="form-group">-->
+        <!--<div class="input-group">-->
+            <!--<input class="form-control" placeholder="yyyy-mm-dd"-->
+            <!--name="dp" [(ngModel)]="model"-->
+            <!--ngbDatepicker #datePicker="ngbDatepicker">-->
+            <!--<div class="input-group-addon"-->
+                 <!--(click)="datePicker.toggle()"  >-->
+                <!--<button type="button" class="btn btn-sm btn-danger">日期</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</form>-->
+
+<!--<hr/>-->
+<!--<pre>-->
+    <!--日期： {{model | json}}-->
+<!--</pre>-->
+
+<!-- datepicker 显示中文-->
+<!--<div [(ngModel)]="language" ngbRadioGroup>-->
+    <!--<label class="btn btn-primary">-->
+        <!--<input type="radio" value="en"> English-->
+    <!--</label>-->
+    <!--<label class="btn btn-primary">-->
+        <!--<input type="radio" value="zh"> 中文-->
+    <!--</label>-->
+<!--</div>-->
+<!--<hr>-->
+<!--<ngb-datepicker [(ngModel)]="model"></ngb-datepicker>-->
+
+
+<!--datepicker 测试NgbDateStruct使用 -->
+<form class="form-inline">
+    <div class="form-group">
+        <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd"
+                   name="dp" [(ngModel)]="model"
+                   ngbDatepicker #datePicker="ngbDatepicker">
+            <div class="input-group-addon"
+                 (click)="datePicker.toggle()">
+                <button type="button" class="btn btn-sm btn-danger">日期</button>
+            </div>
+
+            <div class="input-group-addon"
+                 (click)="datePicker.navigateTo()">
+                <button type="button" class="btn btn-sm btn-danger">跳转日期</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<hr/>
+<pre>
+日期： {{model | json}}
+</pre>

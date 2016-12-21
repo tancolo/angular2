@@ -1,0 +1,9 @@
+<!--<ng2-datetimepicker (dateSelected)="datetime = $event"></ng2-datetimepicker>-->
+<!--<ng2-datetimepicker (dateSelected)="showDateTime($event)"></ng2-datetimepicker>-->
+
+<ng2-datetimepicker [ID]="'date1'" (dateSelected)="date1 = $event"></ng2-datetimepicker>
+<h3>date1: {{date1}}</h3>
+
+
+<ng2-datetimepicker [ID]="'date2'" (dateSelected)="date2 = $event"></ng2-datetimepicker>
+<h3>date2: {{date2}}</h3>
