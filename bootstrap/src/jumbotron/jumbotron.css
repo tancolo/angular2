@@ -1,0 +1,145 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+    height: 80px;
+}
+
+@media (min-width: 768px) {
+    .navbar-text-center {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar-text-center {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-text-center {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*@media (min-width: 1200px) {
+    .navbar-text-center {
+        width: 100%;
+        text-align: center;
+    }
+}*/
+
+.navbar-height {
+    height: 80px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.navbar-header {
+    height: 80px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+/*@media only screen and (min-width: 760px) {
+    .logoMeetingup {
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        height: 44px;
+        top: 54%;
+        left: 50%;
+        max-width: 25%;
+    }
+}*/
+
+.jumbotron-container-background {
+    background-image: url("../image/still_3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+}
+
+.container h1 {
+    text-align: center;
+    color: floralwhite;
+}
+
+
+/*.container p {
+    text-align: center;
+    color: floralwhite;
+}*/
+
+.container-button-center {
+    text-align: center;
+    color: floralwhite;
+    margin-top: 50px;
+}
+
+
+/*
+video wrap
+*/
+
+
+/*.homeVideoWrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 54vh;
+    min-height: 320px;
+    max-height: 465px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+#homeVideoWrap>.bounds {
+    position: relative;
+    z-index: 25;
+    margin: 0 auto;
+}
+
+.align--center,
+.pagination {
+    -webkit-align-self: center;
+    align-self: center;
+    -ms-flex-item-align: center;
+    text-align: center!important;
+}
+
+.bounds {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 840px;
+    padding: 24px 16px 8px;
+    width: 100%;
+}*/
