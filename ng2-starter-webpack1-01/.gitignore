@@ -1,0 +1,7 @@
+.idea
+node_modules
+*.log
+/dist
+/src/app/*.js
+/src/*.js
+/typings

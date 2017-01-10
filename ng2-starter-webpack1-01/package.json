@@ -1,0 +1,41 @@
+{
+    "name": "ng2-starter-webpack",
+    "version": "0.0.1",
+    "description": "just for ng2 starter ",
+    "keywords": [
+        "angular2",
+        "webpack"
+    ],
+    "author": "tancolo",
+    "license": "MIT",
+    "scripts": {
+        "build": "webpack --progress",
+        "build:prod": "webpack -p --progress",
+        "postinstall": "typings install",
+        "serve": "webpack-dev-server --inline --progress"
+    },
+    "dependencies": {
+        "@angular/common": "2.4.2",
+        "@angular/compiler": "2.4.2",
+        "@angular/core": "2.4.2",
+        "@angular/forms": "2.4.2",
+        "@angular/http": "2.4.2",
+        "@angular/platform-browser": "2.4.2",
+        "@angular/platform-browser-dynamic": "2.4.2",
+        "@angular/router": "3.4.2",
+        "core-js": "2.4.1",
+        "reflect-metadata": "0.1.9",
+        "rxjs": "5.0.3",
+        "zone.js": "0.7.4"
+    },
+    "devDependencies": {
+        "angular2-template-loader": "0.5.0",
+        "html-webpack-plugin": "2.22.0",
+        "raw-loader": "0.5.1",
+        "ts-loader": "0.9.5",
+        "typescript": "2.1.4",
+        "typings": "2.1.0",
+        "webpack": "1.14.0",
+        "webpack-dev-server": "1.16.2"
+    }
+}
