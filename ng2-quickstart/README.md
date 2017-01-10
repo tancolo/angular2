@@ -1,16 +1,10 @@
-{
-    "name": "ng2-quickstart",
-    "version": "1.0.0",
-    "scripts": {
-        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-        "lite": "lite-server",
-        "postinstall": "typings install",
-        "tsc": "tsc",
-        "tsc:w": "tsc -w",
-        "typings": "typings"
-    },
-    "license": "ISC",
-    "dependencies": {
+# ng2-quickstart
+Follow the official document.
+https://angular.cn/docs/ts/latest/guide/setup.html
+
+Modify the package file, change the latest verson @angular@2.4.2 . It Works.
+```
+"dependencies": {
         "@angular/common": "2.4.2",
         "@angular/compiler": "2.4.2",
         "@angular/core": "2.4.2",
@@ -34,4 +28,6 @@
         "typescript": "2.1.4",
         "typings": "2.1.0"
     }
-}
+```
+
+
