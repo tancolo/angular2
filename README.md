@@ -2,7 +2,7 @@
 It contains many projects of ng2.  Updating... ...
 
 # ng2-quickstart
-Follow the official document. [reference README.md](./ng2-quickstart/README.md)
+Follow the official document. [refer to README.md](./ng2-quickstart/README.md)
 
 # ng2-tour-of-hero
 Follow the official document.

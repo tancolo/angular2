@@ -30,4 +30,13 @@ Modify the package file, change the latest verson @angular@2.4.2 . It Works.
     }
 ```
 
+## 如何使用
+1) npm install
+
+2) npm start
+
+3) review the browser, change the file app.component.ts -> name = "what you want"
+
+
+
 
