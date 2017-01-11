@@ -1,7 +1,8 @@
 <html>
+
 <head>
     <base href="/">
-    <title>Angular2 QuickStart</title>
+    <title>Angular2 Heroes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -15,7 +16,9 @@
 </head>
 
 <!-- 3. Display the application -->
+
 <body>
-<my-app>Loading...</my-app>
+    <my-app>Loading...</my-app>
 </body>
+
 </html>

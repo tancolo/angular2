@@ -6,24 +6,23 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 
-    entry: './src/app/main.ts',
+    entry: './src/main.ts',
     output: {
         path: root('dist'),
         filename: 'app.bundle.js'
     },
     resolve: {
-        extensions: ['', '.js', '.ts']
+        extensions: ['', '.js', '.ts', 'html', 'css']
     },
     module: {
-        loaders: [
-            {
+        loaders: [{
                 test: /\.ts$/,
                 loaders: ['awesome-typescript-loader', 'angular2-template-loader']
             },
             {
                 test: /\.css$/,
                 exclude: root('src', 'app'),
-                loader: ExtractTextPlugin.extract({fallbackLoader: 'style-loader', loader: ['css']})
+                loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: ['css'] })
             },
 
             // all css required in src/app files will be merged in js files
@@ -46,7 +45,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
-        new ExtractTextPlugin({filename: 'css/[name].[hash].css'})
+        new ExtractTextPlugin({ filename: 'css/[name].css' })
     ]
 };
 
