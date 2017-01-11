@@ -2,7 +2,9 @@
 This is a basic webpack config.
 
 About the detail of the webpack,Please reference these articles
+
 [Angular2开发基础之TSC编译](http://www.jianshu.com/p/b12ccfdfb0c1)
+
 [Angular2开发基础之Webpack](http://www.jianshu.com/p/4b4264f045b7)
 
 # How to run
@@ -67,7 +69,7 @@ module.exports = {
             { test: /\.component.ts$/, loader: 'ts!angular2-template' },
             { test: /\.ts$/, exclude: /\.component.ts$/, loader: 'ts' },
 ```
-区别是*.component.ts有可能包含html template, 为不是简单的
+区别是*.component.ts有可能包含html template, 而不是简单的
 ```
 template: `<h1>Hello World!</h1>`
 ```
@@ -85,6 +87,13 @@ template: `<h1>Hello World!</h1>`
     stylesUrl: ['./app.component.css']
 })
 ```
+
+# typings.d.ts
+`declare function require(id: string): any;`
+解决， 编译过程中出现 Can not find 'require' 问题。
+https://github.com/angular/angular-cli/issues/2221
+
+
 
 
 
