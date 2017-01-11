@@ -13,11 +13,11 @@ Follow the official document.
 
 # ng2-tour-of-heroes-systemjs
 Follow the official document with systemjs. [angular.cn](https://angular.cn/docs/ts/latest/tutorial/)
-Refer to [./ng2-tour-of-heroes-systemjs/README.md]
+Refer to [refer to README.md](./ng2-tour-of-heroes-systemjs/README.md)
 
 # ng2-tour-of-heroes-webpack
 Using webpack to package heroes project.
-Refer to [./ng2-tour-of-heroes-webpack/README.md]
+Refer to [refer to README.md](./ng2-tour-of-heroes-webpack/README.md)
 
 
 
